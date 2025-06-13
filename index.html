@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Josh Huckabee | University Web Developer</title>
+
+  <!-- Remix Icon CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-gray-100">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 bg-gray-900 shadow-md z-50">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <a href="#home" class="text-xl font-bold text-indigo-400">Josh Huckabee</a>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:text-indigo-300">About</a></li>
+        <li><a href="#skills" class="hover:text-indigo-300">Skills</a></li>
+        <li><a href="#work" class="hover:text-indigo-300">Work</a></li>
+        <li><a href="#contact" class="hover:text-indigo-300">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
+      <h1 class="text-5xl font-extrabold mb-4 text-indigo-400">Hi, I'm Josh Huckabee</h1>
+      <p class="text-lg max-w-xl mb-6">
+        Web Developer @ University of North Texas — crafting practical digital solutions to help our campus work smarter, greener, and happier.
+      </p>
+      <a href="#about" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700 transition">Learn More</a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container mx-auto px-6 py-20 max-w-4xl">
+      <h2 class="text-3xl font-bold mb-6 border-b-4 border-indigo-600 inline-block text-indigo-400">About Me</h2>
+      <p class="mb-6 leading-relaxed">
+        Hi, I'm a Web Developer at the University of North Texas with 8 years of hands-on experience building practical, often behind-the-scenes web solutions that keep our campus running smoothly.
+      </p>
+      <p class="mb-6 leading-relaxed">
+        I believe in learning by doing (true to the university spirit), and I’ve been lucky to explore a range of technologies along the way. Outside of work, I’m a husband, dad to a wild and wonderful 2-year-old, part-time rock climber, and full-time builder of raised beds and trellises for my wife’s thriving garden.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="bg-gray-800 py-20">
+      <div class="container mx-auto px-6 max-w-4xl">
+        <h2 class="text-3xl font-bold mb-6 border-b-4 border-indigo-600 inline-block text-indigo-400">Skills</h2>
+        <ul class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8 text-gray-300">
+          <li class="flex items-center space-x-3"><i class="ri-html5-fill text-orange-500 text-2xl"></i><span>HTML5</span></li>
+          <li class="flex items-center space-x-3"><i class="ri-css3-fill text-blue-500 text-2xl"></i><span>CSS3</span></li>
+          <li class="flex items-center space-x-3"><i class="ri-javascript-fill text-yellow-400 text-2xl"></i><span>JavaScript</span></li>
+          <li class="flex items-center space-x-3"><i class="ri-code-s-slash-line text-indigo-500 text-2xl"></i><span>jQuery</span></li>
+          <li class="flex items-center space-x-3"><img src="https://cdn.simpleicons.org/php/7377AD" alt="PHP" class="w-6 h-6"><span>PHP</span></li>
+          <li class="flex items-center space-x-3"><i class="ri-database-2-line text-gray-400 text-2xl"></i><span>MySQL</span></li>
+          <li class="flex items-center space-x-3"><i class="ri-dribbble-fill text-blue-700 text-2xl"></i><span>Drupal</span></li>
+          <li class="flex items-center space-x-3"><i class="ri-share-line text-green-600 text-2xl"></i><span>Power Automate</span></li>
+          <li class="flex items-center space-x-3"><i class="ri-terminal-box-line text-gray-400 text-2xl"></i><span>Visual Basic</span></li>
+          <li class="flex items-center space-x-3"><i class="ri-bootstrap-fill text-purple-500 text-2xl"></i><span>Bootstrap</span></li>
+          <li class="flex items-center space-x-3"><i class="ri-git-branch-line text-yellow-700 text-2xl"></i><span>Git</span></li>
+          <li class="flex items-center space-x-3"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" class="w-6 h-6"><span>Python</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="container mx-auto px-6 py-20 max-w-4xl">
+      <h2 class="text-3xl font-bold mb-6 border-b-4 border-indigo-600 inline-block text-indigo-400">What I Build</h2>
+
+      <details class="mb-6 border border-gray-700 rounded p-4 hover:shadow-lg transition cursor-pointer text-gray-300">
+        <summary class="font-semibold">Internal Process Automation</summary>
+        <p class="mt-2">Designed and implemented automated workflows for departments including Housing, Dining, and Facilities. Transformed paper-based processes into efficient digital solutions, improving operational efficiency and ensuring smoother cross-departmental collaboration.</p>
+      </details>
+
+      <details class="mb-6 border border-gray-700 rounded p-4 hover:shadow-lg transition cursor-pointer text-gray-300">
+        <summary class="font-semibold">Digital Signage</summary>
+        <p class="mt-2">Built a signage app that plays videos or slideshows from folder contents on 500+ classroom displays across campus.</p>
+      </details>
+
+      <details class="mb-6 border border-gray-700 rounded p-4 hover:shadow-lg transition cursor-pointer text-gray-300">
+        <summary class="font-semibold">Dining Menus</summary>
+        <p class="mt-2">Created a streamlined display layer on top of the university’s legacy Foodpro application.</p>
+      </details>
+
+      <p class="italic text-gray-500 mt-6">
+        Note: Due to the internal nature of these projects, I can't share links — but I’m always happy to chat about the tech and process!
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-gray-800 py-20">
+      <div class="container mx-auto px-6 max-w-4xl text-center text-gray-300">
+        <h2 class="text-3xl font-bold mb-6 border-b-4 border-indigo-600 inline-block text-indigo-400">Get in Touch</h2>
+        <p class="mb-10">Want to chat about process automation, garden planning, or web dev with purpose? Let’s connect.</p>
+
+        <div class="flex justify-center gap-6">
+          <!-- Email -->
+          <a href="mailto:Joshua.Huckabee@unt.edu" class="transition duration-200 hover:scale-110 hover:outline hover:outline-2 hover:outline-indigo-400 rounded-full bg-indigo-600 text-white w-14 h-14 flex items-center justify-center text-xl">
+            <i class="ri-mail-send-line"></i>
+          </a>
+          <!-- GitHub -->
+          <a href="https://github.com/JoshuaBHuckabee" target="_blank" rel="noopener" class="transition duration-200 hover:scale-110 hover:outline hover:outline-2 hover:outline-indigo-400 rounded-full bg-gray-700 text-white w-14 h-14 flex items-center justify-center text-xl">
+            <i class="ri-github-line"></i>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/josh-huckabee" target="_blank" rel="noopener" class="transition duration-200 hover:scale-110 hover:outline hover:outline-2 hover:outline-indigo-400 rounded-full bg-blue-700 text-white w-14 h-14 flex items-center justify-center text-xl">
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
