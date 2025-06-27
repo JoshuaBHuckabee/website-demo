@@ -31,13 +31,28 @@
   </header>
 
   <main>
-    <!-- Hero -->
-    <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
-      <h1 class="text-5xl font-extrabold mb-4 text-indigo-400">Hi, I'm Josh Huckabee</h1>
-      <p class="text-lg max-w-xl mb-6">
-        Web Developer @ University of North Texas — crafting practical digital solutions to help our campus work smarter, greener, and happier.
-      </p>
-      <a href="#about" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700 transition">Learn More</a>
+
+    <!-- Home -->
+    <section id="home" class="relative min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20 overflow-hidden">
+      <!-- Background image -->
+      <div class="absolute inset-0 z-0">
+        <img src="assets/unt-1200.jpg" 
+          srcset="
+          assets/unt-600.jpg 600w,
+          assets/unt-1200.jpg 1200w,
+          assets/unt-2400.jpg 2400w,
+          assets/unt-4800.jpg 4800w
+          "
+      sizes="100vw" alt="UNT campus background" class="w-full h-full object-cover" loading="lazy" aria-hidden="true"/>
+        <div class="absolute inset-0 bg-gradient-to-b from-gray-900/80 via-gray-900/60 to-gray-900/90"></div>
+      </div>
+
+      <!-- Foreground content -->
+      <div class="relative z-10">
+        <h1 class="text-5xl font-extrabold mb-4 text-indigo-400">Hi, I'm Josh Huckabee</h1>
+          <p class="text-lg max-w-xl mb-6">Web Developer @ University of North Texas — crafting practical digital solutions to help our campus work smarter, greener, and happier.</p>
+          <a href="#about" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700 transition">Learn More</a>
+      </div>
     </section>
 
     <!-- About -->
