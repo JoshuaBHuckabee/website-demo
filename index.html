@@ -17,19 +17,33 @@
 <body class="bg-gradient-to-br from-gray-950 via-indigo-900 to-gray-950 text-gray-100 caret-transparent">
 
   <!-- Header -->
-  <header class="fixed top-0 left-0 right-0 bg-gray-900 shadow-md z-50">
-    <nav class="container mx-auto p-4 text-center md:text-left">
-      <div class="flex flex-col md:flex-row md:justify-between md:items-center space-y-4 md:space-y-0">
-        <a href="#home" class="text-2xl font-bold bg-gradient-to-r from-purple-500 via-indigo-400 to-blue-400 bg-clip-text text-transparent">Josh Huckabee</a>
+  <header class="bg-gray-900 shadow-md z-50">
+    <!-- Title (always top) -->
+    <div class="fixed top-0 left-0 right-0 bg-gray-900 z-50">
+      <div class="container mx-auto p-4 flex justify-center md:justify-between items-center">
+        <a href="#home" class="text-2xl font-bold bg-gradient-to-r from-indigo-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent transition duration-300 transform hover:scale-105 hover:drop-shadow-md">
+          Josh Huckabee
+        </a>
 
-        <ul class="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 text-base">
-          <li><a href="#about" class="font-bold hover:text-indigo-300 transition-colors">About</a></li>
-          <li><a href="#work" class="font-bold hover:text-indigo-300 transition-colors">Work</a></li>
-          <li><a href="#contact" class="font-bold hover:text-indigo-300 transition-colors">Contact</a></li>
+        <!-- Nav for desktop (hidden on mobile) -->
+        <ul class="hidden md:flex space-x-6 text-base">
+          <li><a href="#about" class="font-medium hover:text-indigo-300 transition-colors">About</a></li>
+          <li><a href="#work" class="font-medium hover:text-indigo-300 transition-colors">Work</a></li>
+          <li><a href="#contact" class="font-medium hover:text-indigo-300 transition-colors">Contact</a></li>
         </ul>
       </div>
+    </div>
+
+    <!-- Nav for mobile only (bottom bar) -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-gray-900 z-40 md:hidden">
+      <ul class="flex justify-around p-4 text-base">
+        <li><a href="#about" class="font-medium hover:text-indigo-300 transition-colors">About</a></li>
+        <li><a href="#work" class="font-medium hover:text-indigo-300 transition-colors">Work</a></li>
+        <li><a href="#contact" class="font-medium hover:text-indigo-300 transition-colors">Contact</a></li>
+      </ul>
     </nav>
   </header>
+
 
   <main>
 
